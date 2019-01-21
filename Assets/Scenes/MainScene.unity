@@ -266,10 +266,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 274949970}
+  - component: {fileID: 274949969}
   - component: {fileID: 274949967}
   - component: {fileID: 274949968}
   - component: {fileID: 274949971}
-  - component: {fileID: 274949969}
   - component: {fileID: 274949972}
   m_Layer: 0
   m_Name: Player
@@ -389,8 +389,7 @@ MonoBehaviour:
   CookiePrefab: {fileID: 1095950620740606, guid: b7da96c7e2d9f39429c89cac377a7cc9,
     type: 2}
   BeamPrefab: {fileID: 1485821215575286, guid: ba2c4550a98990f49b649dc2a3969103, type: 2}
-  _dialogDisplayer: {fileID: 114042044133957670, guid: c836bf2407286da40a2e9f0ac620a5d3,
-    type: 2}
+  _dialogDisplayer: {fileID: 799067014}
   _deathSound: {fileID: 0}
   _deathScreen: {fileID: 1380251109610940, guid: 91e65477f314ded458a4fa9c0ba4592e,
     type: 2}
@@ -646,6 +645,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_dialogWithPlayer: []
   dialogID: 1
+--- !u!114 &799067014 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114019501356013084, guid: 6875a32d32ff9db4989680a17ba00cc6,
+    type: 2}
+  m_PrefabInternal: {fileID: 1625646812}
+  m_Script: {fileID: 11500000, guid: 9ce40368f7918b74fae52f5adcaa1e2c, type: 3}
 --- !u!1 &916047609
 GameObject:
   m_ObjectHideFlags: 0
