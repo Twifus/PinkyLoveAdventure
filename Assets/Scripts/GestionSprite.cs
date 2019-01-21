@@ -22,7 +22,8 @@ public class GestionSprite : MonoBehaviour {
      * Vitesse de l'animation
      * (temps d'attente entre chaque changement)
      */
-    public float anim_speed;
+    private float anim_speed;
+    public float animation_time = 0.2f;
 
     SpriteRenderer m_render;
 
@@ -39,6 +40,7 @@ public class GestionSprite : MonoBehaviour {
     {
         timer = 0;
         i = 0;
+        anim_speed = animation_time;
 
         m_render = this.GetComponent<SpriteRenderer>();
 	}
@@ -66,8 +68,14 @@ public class GestionSprite : MonoBehaviour {
     {
         // Debug.Log("x:" + direction.x + " y:" + direction.y);
         if (Mathf.Abs(direction.x) <= error_zero && Mathf.Abs(direction.y) <= error_zero)
-            ChangeState(iddle);
-        else if (Mathf.Abs(direction.x) > Mathf.Abs(direction.y))
+        {
+            // ChangeState(iddle);
+            anim_speed = float.PositiveInfinity; // il bouge pas mais garde le sprite hey malin
+            return;
+
+        }
+        anim_speed = animation_time;
+        if (Mathf.Abs(direction.x) > Mathf.Abs(direction.y))
         {
             if (direction.x > 0)
                 ChangeState(right);

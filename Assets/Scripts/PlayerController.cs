@@ -163,7 +163,7 @@ public class PlayerController : MonoBehaviour {
     void beamAttack()
     {
         _beam = (GameObject)Instantiate(BeamPrefab, transform.position + Quaternion.AngleAxis((float)_heading * 90f, Vector3.forward) * new Vector3(8, 0), Quaternion.identity);
-        _beam.GetComponent<BeamBehaviour>().setBeamParameters((float)_heading * 90f, 50f, 0.5f);
+        _beam.GetComponent<BeamBehaviour>().setBeamParameters(Vector2.down, 50f, 0.5f);
     }
 
     private void OnTriggerStay2D(Collider2D collision)
