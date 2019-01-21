@@ -351,6 +351,7 @@ MonoBehaviour:
   - text: "[Fl\xE8ches : se d\xE9placer] [Espace : tirer ou parler \xE0 un NPC] [M:
       Montrer/Enlever la carte]"
     color: {r: 0, g: 0, b: 0, a: 1}
+  dialogID: -1
 --- !u!61 &239262487
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -517,7 +518,7 @@ SpriteRenderer:
   m_SortingLayerID: 250101475
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: 4d1812406f3cf724d9bf26e4afc9ef77, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e41c9b7728fe3bc4eb15314397eee246, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -10813,6 +10814,7 @@ MonoBehaviour:
   - text: "NPC : Derri\xE8re la montagne. Il te faudra traverser la terrible Grotte
       Ah'Spirant'"
     color: {r: 0, g: 0, b: 0, a: 1}
+  dialogID: -1
 --- !u!58 &1430173580
 CircleCollider2D:
   m_ObjectHideFlags: 0
