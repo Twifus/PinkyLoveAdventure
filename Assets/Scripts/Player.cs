@@ -47,16 +47,14 @@ public class Player : Entity {
         speed = walk_speed;
     }
 
-    /**
-     * Fonction à chaque frame
-     */
-    protected override void FixedUpdate()
+    private void Update()
     {
         // Exit
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             Application.Quit();
         }
+
         // Mort
         if (_dead)
         {
@@ -67,11 +65,11 @@ public class Player : Entity {
             }
             return;
         }
+
         // En dialogue
         if (_dialogDisplayer.IsOnScreen())
             return;
-        // Change direction, change sprite and move
-        base.FixedUpdate();
+
         // Attaque
         if (!_cookie && !_beam)
         {
@@ -91,11 +89,27 @@ public class Player : Entity {
                 Destroy(_cookie);
             }
         }
+
         // Parler
         if (Input.GetKeyDown(KeyCode.Space) && _closestNPCDialog)
         {
             _dialogDisplayer.SetDialog(_closestNPCDialog.GetDialog());
-        } 
+        }
+    }
+
+    /**
+     * Fonction à chaque frame
+     */
+    protected override void FixedUpdate()
+    {
+        if (_dead || _dialogDisplayer.IsOnScreen())
+            return;
+
+        if (!_cookie && !_beam)
+        {
+            // Change direction, change sprite and move
+            base.FixedUpdate();
+        }
     }
 
     /**
@@ -114,7 +128,7 @@ public class Player : Entity {
         }
        
 
-        if (m_direction.x != 0 && m_direction.y != 0)
+        if (m_direction.x != 0 || m_direction.y != 0)
         {
             fire_direction = m_direction;
             fire_direction.Normalize();
@@ -180,6 +194,6 @@ public class Player : Entity {
     private void BeamAttack()
     {
         _beam = (GameObject)Instantiate(BeamPrefab, transform.position + (Vector3) fire_direction * 8, Quaternion.identity);
-        _beam.GetComponent<BeamBehaviour>().setBeamParameters(m_direction, 50f, 0.5f);
+        _beam.GetComponent<BeamBehaviour>().setBeamParameters(fire_direction, 50f, 0.5f);
     }
 }
