@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public enum Directions { EAST, NORTH, WEST, SOUTH };
 
@@ -14,16 +15,24 @@ public class PlayerController : MonoBehaviour {
     public Sprite LeftSprite;
     public Sprite RightSprite;
 
+    public AudioClip _deathSound;
+    public GameObject _deathScreen;
+    public float _deathTimeOut;
+
+    public DialogManager _dialogDisplayer;
+
     public float speed;
 
     private Rigidbody2D _rb;
     private SpriteRenderer _renderer;
     private GameObject _cookie;
     private GameObject _beam;
+    private Dialog _closestNPCDialog;
 
     private Directions _heading;
-
     private bool _attacking;
+    private bool _dead;
+    private float _deathTime;
 
 	// Use this for initialization
 	void Start () {
@@ -35,7 +44,29 @@ public class PlayerController : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
+
+        if (_dead)
+        {
+            //if (Time.time - _deathTime > _deathSound.length + _deathTimeOut)
+            if (Time.time - _deathTime > _deathTimeOut)
+            {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            }
+            return;
+        }
+
+        // if (_dialogDisplayer.IsOnScreen())
+        //     return;
+
         ChangeSpriteToMatchDirection();
+
+        if (Input.GetKeyDown(KeyCode.Space) && _closestNPCDialog) {
+                _dialogDisplayer.SetDialog(_closestNPCDialog.GetDialog());
+        }
 
         if (!_cookie && !_beam)
         {
@@ -59,6 +90,10 @@ public class PlayerController : MonoBehaviour {
 
     private void FixedUpdate()
     {
+        // (_dead || _dialogDisplayer.IsOnScreen())
+        if (_dead)
+            return;
+
         if (!_cookie && !_beam)
         {
             Move();
@@ -132,4 +167,46 @@ public class PlayerController : MonoBehaviour {
         _beam.GetComponent<BeamBehaviour>().setBeamParameters((float)_heading * 90f, 50f, 0.5f);
     }
 
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.tag == "Mob")
+        {
+            collision.GetComponent<Mob>().TriggerAggro(this.gameObject);
+        }
+        else if (collision.tag == "NPC")
+        {
+            _closestNPCDialog = collision.GetComponent<Dialog>();
+        }
+        else if (collision.tag == "InstantDialog")
+        {
+            Dialog instantDialog = collision.GetComponent<Dialog>();
+            if (instantDialog != null)
+            {
+                _dialogDisplayer.SetDialog(instantDialog.GetDialog());
+            }
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.tag == "NPC")
+        {
+            _closestNPCDialog = null;
+        }
+        else if (collision.tag == "InstantDialog")
+        {
+            Destroy(collision.gameObject);
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.collider.tag == "Mob")
+        {
+            _dead = true;
+            _deathTime = Time.time;
+            //AudioManager.instance.PlaySound(_deathSound);
+            //_deathScreen.SetActive(true);
+        }
+    }
 }
