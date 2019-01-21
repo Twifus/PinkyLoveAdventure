@@ -59,8 +59,8 @@ public class PlayerController : MonoBehaviour {
             return;
         }
 
-        // if (_dialogDisplayer.IsOnScreen())
-        //     return;
+        if (_dialogDisplayer.IsOnScreen())
+             return;
 
         ChangeSpriteToMatchDirection();
 
@@ -90,8 +90,7 @@ public class PlayerController : MonoBehaviour {
 
     private void FixedUpdate()
     {
-        // (_dead || _dialogDisplayer.IsOnScreen())
-        if (_dead)
+        if (_dead || _dialogDisplayer.IsOnScreen())
             return;
 
         if (!_cookie && !_beam)
@@ -206,7 +205,7 @@ public class PlayerController : MonoBehaviour {
             _dead = true;
             _deathTime = Time.time;
             //AudioManager.instance.PlaySound(_deathSound);
-            //_deathScreen.SetActive(true);
+            _deathScreen.SetActive(true);
         }
     }
 }
