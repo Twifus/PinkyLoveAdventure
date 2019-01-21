@@ -1,19 +1,19 @@
 fileFormatVersion: 2
-guid: a5500c70fe21285429d162db78b3041a
+guid: e41c9b7728fe3bc4eb15314397eee246
 TextureImporter:
   fileIDToRecycleName:
-    21300000: pouleSprite_0
-    21300002: pouleSprite_1
-    21300004: pouleSprite_2
-    21300006: pouleSprite_3
-    21300008: pouleSprite_4
-    21300010: pouleSprite_5
-    21300012: pouleSprite_6
-    21300014: pouleSprite_7
-    21300016: pouleSprite_8
-    21300018: pouleSprite_9
-    21300020: pouleSprite_10
-    21300022: pouleSprite_11
+    21300000: player_sprite_0
+    21300002: player_sprite_1
+    21300004: player_sprite_2
+    21300006: player_sprite_3
+    21300008: player_sprite_4
+    21300010: player_sprite_5
+    21300012: player_sprite_6
+    21300014: player_sprite_7
+    21300016: player_sprite_8
+    21300018: player_sprite_9
+    21300020: player_sprite_10
+    21300022: player_sprite_11
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -107,241 +107,241 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: pouleSprite_0
+      name: player_sprite_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 144
-        width: 48
-        height: 48
+        y: 246
+        width: 44
+        height: 82
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 2, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f67cccbfa57e9e74a8e1eeb162660456
+      spriteID: 274045c8cdacf374c8ce6c9c6b073dcf
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pouleSprite_1
+      name: player_sprite_1
       rect:
         serializedVersion: 2
-        x: 48
-        y: 144
-        width: 48
-        height: 48
+        x: 44
+        y: 246
+        width: 44
+        height: 82
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 2, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9784f2c93da0c7b4cab07247f575ca8e
+      spriteID: b429b1369a6a1184198d67e602bfbc2b
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pouleSprite_2
+      name: player_sprite_2
       rect:
         serializedVersion: 2
-        x: 96
-        y: 144
-        width: 48
-        height: 48
+        x: 88
+        y: 246
+        width: 44
+        height: 82
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 2, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9b1f85631945dc349ab439c9014ef240
+      spriteID: 80dde05b47d8b22469704acf974f1dc6
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pouleSprite_3
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 96
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 56a8254d4b3f2f04d9be225e0accb0a8
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pouleSprite_4
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 96
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: eb1532c4d34c1394ead6842d88f2a7d9
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pouleSprite_5
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 96
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 50e3154ba0bf34a478b23a5b38999052
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pouleSprite_6
+      name: player_sprite_3
       rect:
         serializedVersion: 2
         x: 0
-        y: 48
-        width: 48
-        height: 48
+        y: 164
+        width: 44
+        height: 82
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2ce9e606c16c7924191ac669fff4d5af
+      spriteID: 8c1a6248d4040584a8f7e333ed6f64e6
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pouleSprite_7
+      name: player_sprite_4
       rect:
         serializedVersion: 2
-        x: 48
-        y: 48
-        width: 48
-        height: 48
+        x: 44
+        y: 164
+        width: 44
+        height: 82
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6947dcfd888ad5c428eba81a7c1c3583
+      spriteID: e49164d70cb242c4e80dd9a2a52a3112
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pouleSprite_8
+      name: player_sprite_5
       rect:
         serializedVersion: 2
-        x: 96
-        y: 48
-        width: 48
-        height: 48
+        x: 88
+        y: 164
+        width: 44
+        height: 82
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 275f0dd7d686bd241b6c647c8b202047
+      spriteID: f5d0acb20ceb98540a17cd98dc70ff55
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pouleSprite_9
+      name: player_sprite_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 82
+        width: 41
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 3, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66687f08607d24b418d49a029dba4110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_sprite_7
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 82
+        width: 41
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 3, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ace8f78c6d3d3a445b0362703b346d99
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_sprite_8
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 82
+        width: 44
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13f95b474a995d345b7d74ffc2cbf70a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_sprite_9
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 48
-        height: 48
+        width: 44
+        height: 82
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6f10feb45d4635648affa9ca2a2fa586
+      spriteID: 82d99e53eb4545046ab76d3bc7ec07ad
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pouleSprite_10
+      name: player_sprite_10
       rect:
         serializedVersion: 2
-        x: 48
+        x: 44
         y: 0
-        width: 48
-        height: 48
+        width: 44
+        height: 82
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 21bcd7d51aa37604cbb4d3d91e8c72c9
+      spriteID: 2954df49fa3efd145bf904dc17598261
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pouleSprite_11
+      name: player_sprite_11
       rect:
         serializedVersion: 2
-        x: 96
+        x: 88
         y: 0
-        width: 48
-        height: 48
+        width: 44
+        height: 82
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 583ba7981bf4ce642a9001fdcb35bc40
+      spriteID: 5800708c5d5ce234399cc3ffb916dd05
       vertices: []
       indices: 
       edges: []
@@ -349,7 +349,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: f9b2f57802e1c6f4388bc9bf20fe9226
+    spriteID: 5418ef3a5b975de49b894698cbe0b19a
     vertices: []
     indices: 
     edges: []

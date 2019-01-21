@@ -40,7 +40,7 @@ public class Mob : Entity
      * la distance sur x et y min à partir de laquelle le mob
      * décide d'aller au prochain point
      */
-    private readonly float min_distance = 0.05f;
+    private readonly float min_distance = 0.5f;
 
     /**
      * Fonction appelée à l'instenciation
