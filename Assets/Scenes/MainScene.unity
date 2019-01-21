@@ -391,9 +391,8 @@ MonoBehaviour:
   BeamPrefab: {fileID: 1485821215575286, guid: ba2c4550a98990f49b649dc2a3969103, type: 2}
   _dialogDisplayer: {fileID: 799067014}
   _deathSound: {fileID: 0}
-  _deathScreen: {fileID: 1380251109610940, guid: 91e65477f314ded458a4fa9c0ba4592e,
-    type: 2}
-  _deathTimeOut: 4
+  _deathScreen: {fileID: 1073401331}
+  _deathTimeOut: 3
 --- !u!114 &274949972
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -762,6 +761,11 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f2d220d81f95c04787312e69c55de43, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &1073401331 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1380251109610940, guid: 91e65477f314ded458a4fa9c0ba4592e,
+    type: 2}
+  m_PrefabInternal: {fileID: 1837196078}
 --- !u!4 &1079918940 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4600573232410812, guid: 3f2d220d81f95c04787312e69c55de43,
