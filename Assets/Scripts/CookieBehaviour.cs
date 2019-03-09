@@ -4,9 +4,13 @@ using UnityEngine;
 
 public class CookieBehaviour : MonoBehaviour {
 
-    private void OnTriggerEnter(Collider other)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        Destroy(gameObject);
+        if (collision.collider.tag == "Mob")
+        {
+            Destroy(collision.gameObject);
+            Destroy(gameObject);
+        }
     }
 
 }

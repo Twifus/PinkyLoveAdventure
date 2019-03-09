@@ -126,16 +126,4 @@ public class Mob : Entity
         trigger_aggro = false;
         speed = walk_speed;
     }
-
-    /**
-     * Collisions
-     *
-    void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.tag == "theobjectToIgnore")
-        {
-            Physics.IgnoreCollision(theobjectToIgnore.collider, collider);
-        }
-    }
-    */
 }

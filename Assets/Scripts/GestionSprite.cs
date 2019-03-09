@@ -54,9 +54,12 @@ public class GestionSprite : MonoBehaviour {
         if (timer > anim_speed)
         {
             i++;
-            if (i >= state.Length)
-                i = 0;
-            m_render.sprite = state[i];
+            if (state != null)
+            {
+                if (i >= state.Length)
+                    i = 0;
+                m_render.sprite = state[i];
+            }
             timer = 0;
         }
 	}

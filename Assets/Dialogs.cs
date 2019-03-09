@@ -70,13 +70,13 @@ public static class Dialogs{
                     if (!gameBeginingHappened_0)
                     {
                         dialogData.Add("Aaaah.. ma tête\nJ'ai l'impression d'avoir dormi pendant des années...");
-                        dialogData.Add("Mais..où suis - je ? Où sont passés ma maison et ma famille ?!");
-                        dialogData.Add("Ahh...Je meurs de faim, heureusement que j'ai quelques coockies !");
+                        dialogData.Add("Mais..où suis-je ? Où sont passés ma maison et ma famille ?!");
+                        dialogData.Add("Ahh...Je meurs de faim, heureusement que j'ai quelques cookies !");
                         gameBeginingHappened_0 = true;
                     }
                     break;
                 case 1:
-                    dialogData.Add("Monsieur bizarre : Aougaçhuibfbzibfezofpzjfenodzofbqfuqyfzgniqbggzgfz3.14zufbvaol !\n(Oh !Salut toi !Je vois que tu as des coockies !Tu devrais les partager avec ces monstres, ce sont les derniers de leur espèce, il faut les nourrir)");
+                    dialogData.Add("Monsieur bizarre : Aougaçhuibfbzibfezofpzjfenodzofbqfuqyfzgniqbggzgfz3.14zufbvaol !\n(Oh ! Salut toi ! Je vois que tu as des cookies ! Tu devrais les partager avec ces monstres, ce sont les derniers de leur espèce, il faut les nourrir)");
                     break;
                 case 2:
                     dialogData.Add("Monsieur dubitatif : Oh non ! Ce monstre est bloqué, je ne peux pas l'atteindre !");
@@ -125,7 +125,7 @@ public static class Dialogs{
                         dialogData.Add("Maman : Je suis si heureuse que tu ailles bien...");
                         dialogData.Add("Maman : je.. ton père...");
                         dialogData.Add("Maman ! Non ! Réponds moi !!");
-                        dialogData.Add("Mais.. ce ne sont pas des coockies..nCe sont des scies !!");
+                        dialogData.Add("Mais.. ce ne sont pas des cookies..nCe sont des scies !!");
                         dialogData.Add("Mais qu'est-ce que j'ai fait ?!");
                         dialogData.Add("Toutes ces personnes qui m'ont fait tuer des poulets...\nqui m'ont fait tuer ma maman !");
                         dialogData.Add("Je vais me venger, je vois clair maintenant !\nToutes ces illusions ne m'auront plus !");

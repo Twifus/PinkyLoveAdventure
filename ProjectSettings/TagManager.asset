@@ -9,6 +9,7 @@ TagManager:
   - NPC
   - Fireball
   - Mob
+  - Attack
   layers:
   - Default
   - TransparentFX
@@ -19,7 +20,7 @@ TagManager:
   - 
   - 
   - Mob
-  - 
+  - Player
   - 
   - 
   - 

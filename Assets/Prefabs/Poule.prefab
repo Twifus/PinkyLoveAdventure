@@ -94,7 +94,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 30
+  m_Radius: 50
 --- !u!114 &114218476129124028
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -107,7 +107,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   walk_speed: 0.4
-  sprint_speed: 0.95
+  sprint_speed: 0.75
   gestionSprite: {fileID: 114946858293894900}
   walk:
   - {x: -152, y: -175}
@@ -147,7 +147,7 @@ MonoBehaviour:
   - {fileID: 21300006, guid: a5500c70fe21285429d162db78b3041a, type: 3}
   - {fileID: 21300008, guid: a5500c70fe21285429d162db78b3041a, type: 3}
   - {fileID: 21300010, guid: a5500c70fe21285429d162db78b3041a, type: 3}
-  anim_speed: 0.3
+  animation_time: 0.2
 --- !u!212 &212906544338749648
 SpriteRenderer:
   m_ObjectHideFlags: 1
